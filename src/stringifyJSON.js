@@ -23,7 +23,7 @@ var stringifyJSON = function(obj) {
   } else if (Array.isArray(obj)) {
     let result = '[';
     let comma = false;
-    for (let index = 0 ; index < obj.length ; index ++) {
+    for (let index = 0; index < obj.length; index ++) {
       if (!comma) {
         comma = !comma;
       } else {

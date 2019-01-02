@@ -5,7 +5,10 @@ describe('parseJSON', function() {
     parseableStrings.forEach(function(test) {
       var result = parseJSON(test);
       var expected = JSON.parse(test);
+      console.log("RESULT\n" + result);
+      console.log("expected\n" + expected);
       var equality = _.isEqual(result, expected); // why can't we use `===` here?
+      console.log("equality\n" + equality);
       expect(equality).to.equal(true);
     });
   });
